@@ -8,7 +8,7 @@ require('dotenv').config()
 app.use(express.json())
 
 app.use('/',Blog)
-app.use('/login',login)
+app.use('/api',login)
 app.use('/auth',register)
 
 const Port = process.env.PORT
